@@ -1,0 +1,9 @@
+$ docker-compose exec mysql bash
+$ mysql -u root -p 
+if windows
+$ winpty docker-compose exec mysql bash
+$ mysql -u root -p 
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
+ALTER USER 'default'@'%' IDENTIFIED WITH mysql_native_password BY 'secret';
