@@ -522,7 +522,7 @@ RUN if [ ${INSTALL_IMAP} = true ]; then \
 
 USER root
 
-ARG INSTALL_CALENDAR=false
+ARG INSTALL_CALENDAR=true
 
 RUN if [ ${INSTALL_CALENDAR} = true ]; then \
     docker-php-ext-configure calendar && \
